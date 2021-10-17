@@ -1,0 +1,26 @@
+.coments-container{
+
+    padding:10px;
+
+}
+
+.msg-comments{
+
+    opacity: 0.4;
+    font-size: 14px;
+
+
+}
+
+.comment{
+
+    margin-bottom: 6px;
+    font-size: 14px;
+
+
+}
+strong{
+
+margin-right: 4px;
+
+}

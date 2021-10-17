@@ -1,8 +1,9 @@
 import "./App.css";
-import Header from "./Header";
-import PostForm from "./PostForm";
-import Post from "./Post";
-import Avatar from "./Avatar";
+import Header from "./components/Header/Header";
+import PostForm from "./components/PostForm/PostForm";
+import Post from "./components/Post/Post";
+import Avatar from "./components/Avatar/Avatar";
+
 
 const posts = [
   {

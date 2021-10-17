@@ -1,6 +1,6 @@
-import Avatar from "./Avatar";
-import { CommentList } from "./Comments";
-import CommentForm from "./CommentForm";
+import Avatar from "../Avatar/Avatar";
+import { CommentList } from "../Comments/Comments";
+import CommentForm from "../CommentForm/CommentForm";
 function Post(props) {
   
     return (
