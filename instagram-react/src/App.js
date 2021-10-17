@@ -1,15 +1,15 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import PostForm from "./components/PostForm/PostForm";
 import Post from "./components/Post/Post";
-import Avatar from "./components/Avatar/Avatar";
-
+import CommentForm from "./components/CommentForm/CommentForm";
+import Colors from "./styles/colors";
 
 const posts = [
   {
-    userName: "Jonas Grossi",
+    userName: "Tiago Gouvêa",
     date: "13 Oct 2021 - 20:21",
     message: "Maneiro essa coisa!",
+    image: "/assets/paisagem.jpg",
     comments: [
       {
         userName: "Baraky",
@@ -17,21 +17,18 @@ const posts = [
         message: "Concordo",
       },
       {
-        userName: "Helena",
+        userName: "Helena Lannes",
         date: "13 Oct 2021 - 20:35",
-        message: "Concordo",
-      }
-    ]
+        message: "Coloca TypeScript",
+      },
+    ],
   },
   {
     userName: "Baraky",
     date: "13 Oct 2021 - 20:48",
-    message: "Testess",
+    message: "Eu gosto de dar spoiler",
   },
 ];
-
-
-//const firstPost = posts[0];
 
 posts.push({
   userName: "Guilherme Rodrigues",
@@ -41,14 +38,31 @@ posts.push({
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Avatar />
-      <PostForm />
-      {posts.map((post) => {
-        //cada post e um item do array posts 
-        return <Post data={post} />;
-      })}
+    <div>
+      <div
+        style={{
+          width: "100vw",
+          backgroundColor: "white",
+          borderBottom: `1px solid ${Colors.darkBorder}`,
+          marginBottom: "40px",
+        }}
+      >
+        <Header />
+      </div>
+      <div style={{ maxWidth: "614px", margin: "auto" }}>
+        <CommentForm
+          style={{
+            border: `1px solid ${Colors.darkBorder}`,
+            backgroundColor: "white",
+          }}
+          buttonColor={Colors.red}
+          placeholder="Faça uma publicação"
+          buttonText="Publicar"
+        />
+        {posts.map((post) => (
+          <Post data={post} />
+        ))}
+      </div>
     </div>
   );
 }
