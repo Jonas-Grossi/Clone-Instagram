@@ -1,8 +1,10 @@
+import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Post from "./components/Post/Post";
 import CommentForm from "./components/CommentForm/CommentForm";
 import Colors from "./styles/colors";
+import { LoginView } from "./components/LoginView/login";
 
 const posts = [
   {
@@ -37,6 +39,18 @@ posts.push({
 });
 
 function App() {
+  console.log("Render do App");
+  const accessToken = localStorage.getItem("accessToken");
+  const [showLogin, setShowLogin] = React.useState(!accessToken);
+  if (showLogin) {
+    return (
+      <LoginView
+        onLogin={(user) => {
+          user ? setShowLogin(false) : setShowLogin(true);
+        }}
+      />
+    );
+  }
   return (
     <div>
       <div
