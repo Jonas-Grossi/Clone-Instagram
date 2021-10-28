@@ -4,12 +4,12 @@ import { api } from "../../utils/api";
 import "./styles.css";
 
 export const LoginView = (props) => {
-  //console.log("Render do LoginView");
-  // Estados comando react.useState("") serve para vigiar campo
+  console.log("Render do LoginView");
+  // Estados
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-//  const [error, setError] = React.useState(null);
+  const [error, setError] = React.useState(null);
   const [loading, setLoading] = React.useState(false);
 
   // Funções
@@ -20,7 +20,9 @@ export const LoginView = (props) => {
       password: password,
     };
     setLoading(true);
-    api.post("/login", data).then((response) => {
+    api
+      .post("/login", data)
+      .then((response) => {
         // SUCESSO!!!
         setLoading(false);
         props.onLogin(response.data);

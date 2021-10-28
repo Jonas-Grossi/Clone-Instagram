@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# React para humanos - Empresas Juniores + App Masters
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sejam bem vindos ao treinamento "React para humanos" ministrado pela [App Masters](https://appmasters.io).
 
-## Available Scripts
+## Encontros
 
-In the project directory, you can run:
+Os encontros acontecem via Google Meet e são sempre gravados para facilitar o acesso dos que não estiverem presente online. Acesse
+as gravações na [playlist do treinamento](https://youtube.com/playlist?list=PLcVtH740Zo5LTESeoJFo6UJpJRJEuYMv0) no YouTube.
 
-### `npm start`
+- Dia 1 - [Video](https://www.youtube.com/watch?v=G6UUwGQl2Us) - [Conteúdo e tarefas](dia-1-componente-props.md)
+- Dia 2 - [Video](https://youtu.be/mTmSoBTOGsc) - [Conteúdo e tarefas](dia-2-estilizacao.md)
+- Dia 3 - [Video](https://www.youtube.com/watch?v=GsV2sZSSX-s) - [Conteúdo e tarefas](dia-3-estado-hooks-forms.md)
+- Dia 4 - [Video](https://youtu.be/aqHZs8EHx9M) - [Conteúdo e tarefas](dia-4-navegacao.md)
+- Dia 5 - À realizar dia 28 de Outubro de 2021 as 18:30 via [Google Meet](https://meet.google.com/pwp-vcjq-dkq)
+- Dia 6 - À realizar dia 03 de Novembro de 2021 as 18:30 via [Google Meet](https://meet.google.com/pwp-vcjq-dkq)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Rodando seu projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para começar a rodar seu projeto, é preciso fazer o setup do ambiente de desenvolvimento, siga [este documento](dia-0-setup.md) para isso.
 
-### `npm test`
+Uma vez que tenha o node funcionando no seu computador, você poderá clonar este projeto e executar, executando os seguintes comandos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/app-masters-academy/ej-instagram-clone.git
+cd ej-instagram-clone.git
+npm install
+npm start
+```
 
-### `npm run build`
+Após executar estes comandos, o navegador deverá abrir em [http://localhost:3000/](http://localhost:3000/)
+apresentando o projeto react, pronto para ser atualizado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Se você tiver mais experiência com github e quiser ter seu próprio projeto, faça um fork deste repositório e clone o novo repositório em seguida.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Suporte e colaboração
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Estamos nos comunicando via [discord](https://discord.gg/dNJrW99B), e os encontros acontecem via [Google Meet](https://meet.google.com/pwp-vcjq-dkq).
 
-### `npm run eject`
+Sinta-se a vontade para enviar suas dúvidas, e também ajudar os demais estudantes.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Backend e API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Nosso projeto acessará uma API feita exclusivamente para o treinamento. O endereço base (e documentação) é [https://instagram--clone--api.herokuapp.com/](https://instagram--clone--api.herokuapp.com/).
